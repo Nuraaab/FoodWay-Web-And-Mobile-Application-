@@ -7,13 +7,13 @@ import { faClose, faDeleteLeft, faRemove } from '@fortawesome/free-solid-svg-ico
 const Container = styled.div`
 box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
 ${tw`
-w-[60%] absolute top-20 right-2 flex flex-col bg-white rounded py-8 flex justify-center
+md:w-[60%] w-[460px] pl-5 pr-5 md:pl-0 md:pr-0 absolute md:top-20 -right-[210px] top-28 md:right-2 flex flex-col bg-white rounded py-8 flex justify-center
 `};
 `;
 const TopContainer = styled.div`
 box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 ${tw`
-w-[70%] flex flex-col py-8  ml-[15%]
+md:w-[70%] w-full pl-2 pr-2 md:pl-0 md:pr-0 flex flex-col py-8  md:ml-[15%]
 `};
 `;
 const InnerContainer = styled.div`

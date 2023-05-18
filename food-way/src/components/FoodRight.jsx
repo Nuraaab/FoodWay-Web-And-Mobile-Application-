@@ -30,14 +30,14 @@ const CardContainer = styled.div`
 box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 ${tw`
 
-py-3 px-5 flex justify-between flex-col rounded md:w-[250px] md:h-auto w-[50%] mx-5 md:mx-0 items-center mt-[20px] md:mt-5 mx-2
+py-3 px-5 flex justify-between flex-col rounded md:w-[240px] md:h-auto w-[100%] mx-5 md:mx-0 items-center mt-[20px] md:mt-5 mx-2
 `};
 
 `;
 const FilterContainer = styled.div`
 box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 ${tw`
-w-[25%] rounded px-2 flex justify-start  flex-col justify-start py-3  sm:flex hidden
+w-[30%] rounded px-2 flex justify-start  flex-col justify-start py-3  sm:flex hidden
 `};
 `;
 const TypeContainer = styled.div`
@@ -262,8 +262,8 @@ const FoodRight = () => {
             <div className='w-full py-3  flex flex-col justify-between  items-center '>
                 <RightTopContainer>
                     <h1 className='sm:flex hidden font-poppins font-semibold text-[20px] ml-10 '>AVAILABLE FOODS</h1>
-                    <FontAwesomeIcon icon={faSearch} size='50px' className='absolute right-[550px]' />
-                    <input placeholder='Search Food' type='text' className='md:ml-0 ml-10  max-w-[500px] mr-16 text-[13px] font-poppins font-bold px-4 py-3 pl-12 w-full bg-transparent border-2  cursor-pointer border-gray-300 focus:outline-none rounded-[50px]' value={searchFood} onChange={(event) => handleSearchChange(event.target.value.toUpperCase().toLowerCase())}  ></input>
+                    <FontAwesomeIcon icon={faSearch} size='50px' className='absolute right-[520px] ' />
+                    <input placeholder='Search Food' type='text' className='md:ml-0 ml-10  max-w-[500px] mr-10 text-[13px] font-poppins font-bold px-4 py-3 pl-12 w-full bg-transparent border-2  cursor-pointer border-gray-300 focus:outline-none rounded-[50px]' value={searchFood} onChange={(event) => handleSearchChange(event.target.value.toUpperCase().toLowerCase())}  ></input>
                 </RightTopContainer>
 
                 <RightContainer>
@@ -273,12 +273,12 @@ const FoodRight = () => {
                         }
                     </div>
 
-                    <Slider {...settings} className='sm:hidden flex justify-between items-center w-[85%]  ml-5'>
+                    <Slider {...settings} className='sm:hidden flex justify-center items-center w-[94%]  ml-5'>
                         {foodCards}
                     </Slider>
                 </RightContainer>
             </div>
-            <div className='w-full absolute top-0 right-5 cursor-pointer' >
+            <div className='w-full absolute md:top-0 md:right-5 right-[220px] top-3 cursor-pointer' >
                 <Cart cart={cart} setCart={setCart} tPrice={totalPrice} setTotal={setTotalPrice} removeCart={removeFromCart} />
             </div>
             

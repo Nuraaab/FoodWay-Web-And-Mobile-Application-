@@ -20,7 +20,7 @@ text-sm md:text-[20px] text-black mr-1 md:mr-[30px] cursor-pointer font-semibold
 `
 const MLi = styled.li`
 ${tw`
-text-xs text-white mr-1 cursor-pointer  hover:text-red-400 font-poppins font-medium mb-[5px]
+text-[17px] text-white mr-1 cursor-pointer  hover:text-red-400 font-poppins font-medium mb-[5px]
 `}
 `
 const NavbarContainer = styled.div`
@@ -35,7 +35,7 @@ const Navbar = () => {
     <BrowserRouter>
     <NavbarContainer>
       <div className='flex items-center'>
-        <div className='w-auto h-6 md:h-12 '>
+        <div className='w-auto h-10 md:h-12 '>
           <img src={logo} className='w-auto h-[100%] cursor-pointer' />
         </div>
       </div>
@@ -48,10 +48,10 @@ const Navbar = () => {
         <Li>Contact</Li>
 
       </ul>
-      <div className='sm:hidden flex flex-1 justify-end items-center'>
+      <div className='sm:hidden flex flex-1 justify-end items-center w-full'>
         < Hamburger color='black' className='w-[28px] h-[28px] object-contain' toggle={setToggle} toggled={toggle} onToggle={() => setToggle(!toggle)}  />
-        <div className={` ${!toggle ? "hidden" : "flex"}  bg-black w-full p-7 rounded-b-[10px] absolute top-16 right`}>
-          <ul className='list-none flex justify-end items-start flex-1 flex-col'> 
+        <div className={` ${!toggle ? "hidden" : "flex"}  bg-black w-[98%] py-8 rounded-[10px] absolute top-20 right-1`}>
+          <ul className='list-none flex justify-end items-start flex-1 flex-col ml-4'> 
             <MLi> <FontAwesomeIcon icon={faHome} className='mr-2' /><a href='#home'><Link to='/'>Home</Link></a></MLi>
             <MLi> <FontAwesomeIcon icon={faSpoon} className='mr-2' /><Link to='/food'>Food</Link></MLi>
             <MLi> <FontAwesomeIcon icon={faTasksAlt} className='mr-2' /><a href='#service'>Service</a></MLi>
