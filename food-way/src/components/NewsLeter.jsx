@@ -4,9 +4,10 @@ import styled from '@emotion/styled';
 /** @jsxImportSource @emotion/react */
 const NewsLeterContainer= styled.div`
 box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+background: radial-gradient(circle, #ffffff, #f0f0f0);
 
 ${tw`
- max-w-screen-2xl  md:pl-12 md:pr-12 mb-[20px] mx-5 my-5 md:mx-0 md:my-10 rounded-[10px]
+ max-w-screen-2xl  md:pl-12 md:pr-12 mb-[20px] mx-5 my-5 md:mx-0 md:my-10 rounded-[10px] py-7
 `};
 `;
 const NewsLeter = () => {

@@ -26,7 +26,7 @@ text-xs text-white mr-1 cursor-pointer  hover:text-red-400 font-poppins font-med
 const NavbarContainer = styled.div`
 box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 ${tw`
-flex flex-row max-w-screen-2xl w-full min-h-[68px] items-center md:pl-12 md:pr-12 justify-between py-7 
+flex flex-row max-w-screen-2xl w-full min-h-[68px] items-center md:pl-12 md:pr-12 justify-between py-5 
 `};
 `;
 const Navbar = () => {

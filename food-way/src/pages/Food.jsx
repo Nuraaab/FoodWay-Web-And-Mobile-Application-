@@ -4,7 +4,7 @@ import FoodRight from '../components/FoodRight'
 
 const Food = () => {
   return (
-    <div className='w-full h-full flex flex-col items-center overflow-hidden pr-5 ' >
+    <div className='w-full h-full flex flex-col items-center overflow-hidden  ' >
         <div className='w-full h-full flex flex-row'>
          
           <FoodRight />

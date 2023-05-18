@@ -3,7 +3,7 @@ import { arrow } from '../assets'
 
 const Hleft = () => {
     return (
-        <div className='w-full md:w-[48%]  flex items-center md:mt-[100px] pl-8'>
+        <div className='w-full md:w-[48%]  flex items-center md:mt-[50px] pl-8'>
             <div className='w-full flex flex-col items-center     md:justify-start md:items-start  p-6 md:p-2 '>
                 <h1 className='flex justify-center font-poppins font-bold text-[20px] leading-[27px] md:text-[40px] md:leading-[50px] md:max-w-[500px] mb-[20px]'>The Best Place To Satisfay Your Anger.  </h1>
                 <p className='font-poppins font-normal text-sm md:text-base text-black max-w-[400px]'>We provide the best quality fast foods that fulfill your needs. In addtion to the normal service you can build your meal as you want and order us when you finish it.</p>
